@@ -13,8 +13,8 @@ train_data = pd.read_csv("assignment2train.csv")
 y = train_data['meal']
 x = train_data.drop(['meal','id','DateTime'], axis = 1)
 
-#model = DecisionTreeClassifier(max_depth=100, min_samples_leaf=10)
-model = RF(n_estimators=100, n_jobs=-1, max_depth=5)
+model = DecisionTreeClassifier(max_depth=100, min_samples_leaf=10)
+#model = RF(n_estimators=100, n_jobs=-1, max_depth=5)
 modelFit = model.fit(x,y)
 
 
