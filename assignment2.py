@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier as RF
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
+
 test_data = pd.read_csv("assignment2test.csv")
 train_data = pd.read_csv("assignment2train.csv")
 y = train_data['meal']
